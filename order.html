@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw">
+  <head lang="zh-tw">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta content="">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    
+    <link rel=stylesheet type="text/css" href="assets/reset.css"> 
+    <link rel=stylesheet type="text/css" href="assets/bootstrap/css/bootstrap.css"> 
+    <link rel=stylesheet type="text/css" href="assets/style.css"> 
+    <link href="assets/bootstrap/css/datepicker3.css" rel="stylesheet">
+     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-datepicker.js"></script>
+    <script src="assets/bootstrap/js/bootstrap-datepicker.zh-TW.js"></script>
+    <style>
+    <!--
+    form {
+        padding: 2em;
+        background: black;
+        color: white;
+        opacity: 0.8;
+    }
+    
+    form h1 {
+        text-align:center;
+        margin-bottom: 1em;
+    }
+    
+    label {
+        margin: 10px 1em;
+        width: 6em;
+        text-align: right;
+    }
+    
+    input[type='text'], input[type='email']{
+        color: #777;
+        border: none;
+        border-radius: 50px;
+        padding: 5px 1em;
+        margin: 0 4px;
+        
+        width: 50%;
+    }
+    
+    input[name='lname'], input[name='fname'] {
+        width: 24%;
+    }
+    
+    
+    #submit-button {
+        display: block;
+        margin: 0 auto;
+        padding: 0.5em 1.2em;
+        border: 4px solid transparent;
+        background: transparent;
+        transition: all 250ms ease;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    
+    #submit-button:hover {
+        border: 4px solid white;
+    }
+    
+    @media (max-width:769px) {
+        label {
+            display: block;
+            margin: 10px;
+            text-align: left;
+        }
+        
+        input[type='text'] , input[type='email']{
+            width: 100%;
+        }
+        
+        input[name='lname'], input[name='fname'] {
+            width: calc( 50% - 12px );
+        }
+        
+        #submit-button {
+            border: 4px solid white;
+        }
+    }
+    
+    @media (max-width:500px) {
+        input[name='lname'], input[name='fname'] {
+            width: 100%;
+            margin: 8px 4px;
+            display: block;
+        }
+    }
+    
+/*    input[name='fname'] {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    input[name='lname'] {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }*/
+    
+    input[type='radio'] {
+        background: transparent;
+        border: white;
+    }
+    -->
+    </style>
+  </head>
+  <body>
+  <!-- Navigation Bar -->
+
+      <nav class="nav_top navbar navbar-default ">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="logo" href="#">logo</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">首頁</a></li>
+              <li class="active"><a href="order.html">購買</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    
+    
+    <form action='' method='post'>
+        <h1> 訂購 </h1>
+        <div class="form-group">
+            <label>訂購人</label>
+            <input type="text" placeholder="姓名" name="fname" required> 
+        </div>
+        <div class="form-group">
+            <label>寄送日期</label>
+            <input name="date" class="btn btn-default" id="datepicker" type="text" value="" required>
+        </div>
+        <div class="form-group">
+            <label>手機</label>
+            <input type="text" placeholder="Phone Number" name="phno" required>
+            </div>
+        <div class="form-group">
+            <label>E-Mail</label>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-group">
+            <label>地址</label>
+            <input type="email" name="email" placeholder=" 地址" required>
+        </div>
+        <button type="submit" id="submit-button" class="btn btn-info">送出</button>
+    </form>
+    
+        <!-- Footer -->
+    <footer>
+            <img src="" alt=""/>
+            <address>
+                <a href="https://www.google.com.tw/maps/place/803%E9%AB%98%E9%9B%84%E5%B8%82%E9%B9%BD%E5%9F%95%E5%8D%80%E5%BB%BA%E5%9C%8B%E5%9B%9B%E8%B7%AF276%E8%99%9F/@22.6310501,120.2812778,17z/data=!3m1!4b1!4m5!3m4!1s0x346e046fce2f71c9:0x840bf88880db6663!8m2!3d22.6310501!4d120.2834665" target="_blank">811 高雄市鹽埕區建國四路276號</a><br />
+                Tel: <a href="tel:+88675330944">+886-7-591-9000</a>,
+                
+            </address>
+    </footer>
+   
+    <script src="assets/datepicker.js"></script>
+  </body>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+</html>

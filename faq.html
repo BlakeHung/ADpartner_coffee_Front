@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="zh-tw">
+  <head lang="zh-tw">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta content="">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+    <link rel=stylesheet type="text/css" href="assets/reset.css"> 
+    <link rel=stylesheet type="text/css" href="assets/bootstrap/css/bootstrap.css"> 
+    <link rel=stylesheet type="text/css" href="assets/style.css"> 
+    <style>
+    
+        #wrapper {
+            text-align: left;
+            padding: 1em 10%;
+
+        }
+        
+        #wrapper h1 {
+            text-align: center;
+        }
+        
+        #contact-send {
+            font-size: 130%;
+            margin: 1em;
+        }
+        
+        footer {
+            box-shadow: 0 0 5px;
+        }
+        
+        @media (max-width:769px) {
+            #wrapper {
+                padding: 1em 0;
+                margin: 0;
+            }
+        }
+    
+    </style>
+  </head>
+  <body>
+ <!-- Navigation Bar -->
+
+      <nav class="nav_top navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="logo" href="#">logo</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">首頁</a></li>
+              <li><a href="order.html">購買</a></li>
+              <li class="active"><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+    <div id="wrapper">
+    <h1 class='faq_h1'>FAQ</h1>
+    <div class="qsection">
+        <h3>Q1. What are those check marks next to my messages?</h3>
+        <hr />
+        <p>
+            In a group chat, the second check marks will appear when all participants in the group have received your message. The two blue check marks will appear when all participants in the group have read your message.
+
+        </p>
+    </div>
+    
+    <div class="qsection">
+        <h3>Q2. How do I recover deleted messages?</h3>
+        <hr />
+        <p>
+            WhatsApp automatically makes backups every day at 4 AM and stores them in the WhatsApp folder of your Android phone. This folder is either located in your device's internal memory or external microSD card. To restore the most recent backup, you will need to uninstall and reinstall WhatsApp. 
+        </p>
+    </div>
+    
+        <div class="qsection">
+        <h3>Q3. How can I tell if someone has read my message?</h3>
+        <hr />
+        <p>
+            If you see two blue check marks next to your sent message then the recipient has read your message. In a group chat or broadcast message, the check marks will turn blue when every participant has read your message. 
+        </p>
+    </div>
+    
+    </div>
+    <div class="contact-box">
+    <h2>Contact</h2>
+    <textarea placeholder="What to say?">
+    </textarea>
+    <button type="submit" id="contact-send" class="btn btn-info btn-large">SEND</button>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+            <img src="" alt=""/>
+            <address>
+                <a href="https://www.google.com.tw/maps/place/803%E9%AB%98%E9%9B%84%E5%B8%82%E9%B9%BD%E5%9F%95%E5%8D%80%E5%BB%BA%E5%9C%8B%E5%9B%9B%E8%B7%AF276%E8%99%9F/@22.6310501,120.2812778,17z/data=!3m1!4b1!4m5!3m4!1s0x346e046fce2f71c9:0x840bf88880db6663!8m2!3d22.6310501!4d120.2834665" target="_blank">811 高雄市鹽埕區建國四路276號</a><br />
+                Tel: <a href="tel:+88675330944">+886-7-591-9000</a>,
+                
+            </address>
+    </footer>
+    
+  </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+</html>

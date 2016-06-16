@@ -65,32 +65,57 @@
       </nav>
     <div id="wrapper">
     <h1 class='faq_h1'>FAQ</h1>
-    <div class="qsection">
-        <h3>Q1. What are those check marks next to my messages?</h3>
-        <hr />
-        <p>
-            In a group chat, the second check marks will appear when all participants in the group have received your message. The two blue check marks will appear when all participants in the group have read your message.
+    <div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default ">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Q1. What are those check marks next to my messages?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        In a group chat, the second check marks will appear when all participants in the group have received your message. The two blue check marks will appear when all participants in the group have read your message.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Q2. How do I recover deleted messages?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+         WhatsApp automatically makes backups every day at 4 AM and stores them in the WhatsApp folder of your Android phone. This folder is either located in your device's internal memory or external microSD card. To restore the most recent backup, you will need to uninstall and reinstall WhatsApp. 
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Q3. How can I tell if someone has read my message?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        If you see two blue check marks next to your sent message then the recipient has read your message. In a group chat or broadcast message, the check marks will turn blue when every participant has read your message. 
+      </div>
+    </div>
+  </div>
+</div>
+    
 
-        </p>
-    </div>
     
-    <div class="qsection">
-        <h3>Q2. How do I recover deleted messages?</h3>
-        <hr />
-        <p>
-            WhatsApp automatically makes backups every day at 4 AM and stores them in the WhatsApp folder of your Android phone. This folder is either located in your device's internal memory or external microSD card. To restore the most recent backup, you will need to uninstall and reinstall WhatsApp. 
-        </p>
-    </div>
-    
-        <div class="qsection">
-        <h3>Q3. How can I tell if someone has read my message?</h3>
-        <hr />
-        <p>
-            If you see two blue check marks next to your sent message then the recipient has read your message. In a group chat or broadcast message, the check marks will turn blue when every participant has read your message. 
-        </p>
-    </div>
+        
     
     </div>
+    
     <div class="contact-box">
     <h2>連絡我們</h2>
     <textarea placeholder="請填下您的問題告知我們，我們會盡快回應給您">
